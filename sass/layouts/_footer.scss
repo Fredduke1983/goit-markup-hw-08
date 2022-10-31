@@ -1,0 +1,146 @@
+.footer {
+  display: flex;
+  background-color: var(--hero-footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo.footer__logo {
+  color: var(--slave-text-color);
+}
+
+.footer__contacts {
+  color: #ffffffa7;
+  transition: color var(--bezier-effect);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address {
+  margin-top: 20px;
+
+  &__item {
+    line-height: 1.71;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  &__item:nth-child(n + 2) {
+    margin-top: 9px;
+  }
+
+  &__link {
+    color: var(--slave-text-color);
+    transition: color var(--bezier-effect);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__soc--pos {
+  margin-left: 70px;
+}
+
+.footer__soc-title {
+  color: var(--slave-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__soclink--color {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--bezier-effect);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.mailer {
+  display: block;
+  margin-left: auto;
+
+  &__title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--slave-text-color);
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    width: 360px;
+  }
+
+  &__input {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    color: var(--slave-text-color);
+  }
+}
+
+.mailer__btn {
+  height: 50px;
+  width: 200px;
+  margin-left: 12px;
+  background: var(--accent-color);
+  color: var(--slave-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  transition: background var(--bezier-effect);
+
+  &:hover,
+  &:focus {
+    background: var(--hover-btn-color);
+  }
+}
+
+.fmform {
+  display: flex;
+}
+.fmbtn__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fmbtn__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

@@ -1,0 +1,19 @@
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
