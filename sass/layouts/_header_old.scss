@@ -4,32 +4,15 @@
   &__container {
     display: flex;
     align-items: center;
-
-    @media screen and (max-width: 767px) {
-      max-width: 480px;
-      justify-content: space-between;
-    }
   }
   &__contacts {
     margin-left: auto;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
   }
-}
-
-.menu {
-  //   display: block;
-  width: 40px;
-  height: 40px;
 }
 
 .navigation {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
   &__list {
     display: flex;
   }

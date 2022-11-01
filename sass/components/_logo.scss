@@ -9,4 +9,10 @@
   &--color {
     color: var(--accent-color);
   }
+  &__header {
+    @media screen and (max-width: 767px) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
 }

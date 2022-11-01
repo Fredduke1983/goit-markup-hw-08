@@ -59,6 +59,12 @@
 .logo--color {
   color: var(--accent-color);
 }
+@media screen and (max-width: 767px) {
+  .logo__header {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 
 img {
   display: block;
@@ -136,6 +142,14 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header__container {
+    max-width: 480px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .header__contacts {
   margin-left: auto;
   display: -webkit-box;
@@ -145,7 +159,22 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header__contacts {
+    display: none;
+  }
+}
 
+.menu {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
