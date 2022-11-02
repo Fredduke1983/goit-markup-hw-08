@@ -1,11 +1,4 @@
 .what-we-do {
-  display: none;
-  @media screen and(min-width:1200px) {
-    display: block;
-  }
-}
-
-.what-we-do {
   padding-top: 0;
 
   &__title {
@@ -14,6 +7,8 @@
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
   }
 
   &__list {
