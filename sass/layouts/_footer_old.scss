@@ -1,8 +1,13 @@
 .footer {
-  //   display: flex;
+  display: flex;
   background-color: var(--hero-footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo.footer__logo {
@@ -17,11 +22,6 @@
   &:focus {
     color: var(--accent-color);
   }
-  @media screen and (max-width: 1199px) {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-  }
 }
 
 .address {
@@ -32,14 +32,9 @@
     font-style: normal;
     font-size: 14px;
   }
-  &__list {
-    @media screen and (max-width: 1199px) {
-      display: grid;
-      justify-content: center;
-      justify-items: center;
-      gap: 8px;
-    }
-    gap: 9px;
+
+  &__item:nth-child(n + 2) {
+    margin-top: 9px;
   }
 
   &__link {
@@ -53,13 +48,7 @@
 }
 
 .footer__soc-pos {
-  //   margin-left: 70px;
-  @media screen and (max-width: 1199px) {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    gap: 8px;
-  }
+  margin-left: 70px;
 }
 
 .footer__soc-title {
@@ -69,9 +58,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-  }
 }
 
 .footer__soclink--color {
@@ -86,13 +72,12 @@
 }
 
 .mailer {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  //   margin-left: auto;
+  display: block;
+  margin-left: auto;
 
   &__title {
     display: inline-block;
+    width: 100%;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -103,16 +88,12 @@
   }
 
   &__label {
-    // width: 360px;
+    width: 360px;
   }
 
   &__input {
     height: 50px;
     width: 100%;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -125,7 +106,7 @@
 .mailer__btn {
   height: 50px;
   width: 200px;
-
+  margin-left: 12px;
   background: var(--accent-color);
   color: var(--slave-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -134,12 +115,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  //   margin-left: 12px;
-  //   display: flex;
-  //   align-items: center;
-  //   text-align: center;
-  //   justify-content: center;
 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
 
   transition: background var(--bezier-effect);
@@ -151,10 +131,7 @@
 }
 
 .fmform {
-  //   display: flex;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
+  display: flex;
 }
 .fmbtn__group {
   display: flex;

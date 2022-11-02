@@ -2,32 +2,21 @@
   &__title {
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 1.14;
+    font-size: 36px;
+    line-height: 1.16;
     text-align: center;
     color: var(--main-text-color);
-    @media screen and (min-width: 1200px) {
-      font-size: 36px;
-      line-height: 1.16;
-    }
   }
 
   &__list {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
   }
 
   &__item {
-    width: calc((100% - 60px) / 2);
+    width: 170px;
     height: 92px;
-    @media screen and(min-width:768px) {
-      width: calc((100% - 90px) / 3);
-    }
-    @media screen and(min-width:1200px) {
-      width: 170px;
-    }
   }
   &__icon {
     width: 106px;
