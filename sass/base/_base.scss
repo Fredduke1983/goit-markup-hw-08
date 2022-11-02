@@ -7,8 +7,12 @@ body {
 }
 
 section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  margin: 60px 0;
 }
 .container {
   width: 100%;
