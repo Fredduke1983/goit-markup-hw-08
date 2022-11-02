@@ -279,6 +279,11 @@ section {
   -webkit-transition: color var(--bezier-effect);
   transition: color var(--bezier-effect);
 }
+@media screen and (min-width: 768px) {
+  .contacts__link + .contacts__link {
+    margin-top: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__link + .contacts__link {
     margin-left: 50px;
