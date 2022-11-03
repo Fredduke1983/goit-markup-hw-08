@@ -883,4 +883,267 @@ section {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 58, 58, 0.8);
+  opacity: 1;
+  -webkit-transition: opacity var(--bezier-effect), visibility var(--bezier-effect);
+  transition: opacity var(--bezier-effect), visibility var(--bezier-effect);
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: opacity var(--bezier-effect), scale var(--bezier-effect), -webkit-transform var(--bezier-effect);
+  transition: opacity var(--bezier-effect), scale var(--bezier-effect), -webkit-transform var(--bezier-effect);
+  transition: transform var(--bezier-effect), opacity var(--bezier-effect), scale var(--bezier-effect);
+  transition: transform var(--bezier-effect), opacity var(--bezier-effect), scale var(--bezier-effect), -webkit-transform var(--bezier-effect);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -100%) scale(0);
+          transform: translate(-50%, -100%) scale(0);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.cross-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: color var(--bezier-effect);
+  transition: color var(--bezier-effect);
+}
+
+.cross-btn:hover {
+  color: var(--hover-btn-color);
+  cursor: pointer;
+}
+
+.modal-close-cross {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.form-order {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  position: relative;
+  width: 100%;
+}
+
+.form-label:focus-within .form-order-input,
+.form-label:hover .form-order-input,
+.form-label:focus-within .form-order-textarea,
+.form-label:hover .form-order-textarea {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.form-label:focus-within .form-svg-field,
+.form-label:hover .form-svg-field {
+  fill: var(--accent-color);
+}
+
+.form-order-heading {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form-order-title {
+  color: var(--second-text-color);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.form-order-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border var(--bezier-effect);
+  transition: border var(--bezier-effect);
+  cursor: pointer;
+  outline: none;
+}
+
+.form-svg-field {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: fill var(--bezier-effect);
+  transition: fill var(--bezier-effect);
+  fill: currentColor;
+  cursor: pointer;
+}
+
+.form-textarea {
+  margin-bottom: 0;
+}
+
+.form-order-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border var(--bezier-effect);
+  transition: border var(--bezier-effect);
+  cursor: pointer;
+  outline: none;
+}
+
+.check-contract {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.check-span::before {
+  display: inline-block;
+  margin-right: 7px;
+  content: "";
+  width: 16px;
+  height: 15px;
+  background-image: url(../icon/checkout.svg);
+  -webkit-transition: background-image var(--bezier-effect);
+  transition: background-image var(--bezier-effect);
+}
+
+.checkbox-contract:checked + .check-span::before {
+  background-image: url(../icon/checkin.svg);
+}
+
+.check-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--second-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-span {
+    font-size: 14px;
+    line-height: 1.71;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.checkbox-contract {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.check-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+  padding-left: 2px;
+}
+
+.form-btn-send {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 52px;
+  background: var(--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--slave-text-color);
+  -webkit-transition: background var(--bezier-effect);
+  transition: background var(--bezier-effect);
+}
+
+.form-btn-send:hover,
+.form-btn-send:focus {
+  background: var(--hover-btn-color);
 }/*# sourceMappingURL=main.css.map */
