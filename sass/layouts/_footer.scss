@@ -1,8 +1,23 @@
 .footer {
-  //   display: flex;
+  // display: flex;
   background-color: var(--hero-footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer .container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-wrap {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 0;
+  }
 }
 
 .logo.footer__logo {
@@ -53,12 +68,14 @@
 }
 
 .footer__soc-pos {
-  //   margin-left: 70px;
   @media screen and (max-width: 1199px) {
     display: grid;
     justify-content: center;
     justify-items: center;
     gap: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
@@ -89,7 +106,10 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  //   margin-left: auto;
+  @media screen and(min-width:1200px) {
+    margin-left: auto;
+    justify-items: flex-start;
+  }
 
   &__title {
     display: inline-block;
@@ -100,18 +120,26 @@
     text-transform: uppercase;
     color: var(--slave-text-color);
     margin-bottom: 20px;
+    @media screen and(max-width:1199px) {
+      margin-top: 60px;
+    }
   }
 
   &__label {
-    // width: 360px;
+    @media screen and(max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+    @media screen and(min-width:480px) {
+      width: 450px;
+    }
+    @media screen and(min-width:1200px) {
+      width: 358px;
+    }
   }
 
   &__input {
     height: 50px;
     width: 100%;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,13 +162,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  //   margin-left: 12px;
-  //   display: flex;
-  //   align-items: center;
-  //   text-align: center;
-  //   justify-content: center;
-
   letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 
   transition: background var(--bezier-effect);
 
@@ -148,13 +175,19 @@
   &:focus {
     background: var(--hover-btn-color);
   }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 12px;
+  }
 }
 
 .fmform {
-  //   display: flex;
   display: grid;
   justify-content: center;
   justify-items: center;
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 .fmbtn__group {
   display: flex;
