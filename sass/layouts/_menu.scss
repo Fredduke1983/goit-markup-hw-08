@@ -7,8 +7,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #ffffff;
   }
 }
@@ -33,6 +33,7 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
 .menu__mail {
   font-weight: 500;
   font-size: 24px;
@@ -40,12 +41,29 @@
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+
 .menu__soc {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  @media screen and (max-width: 420px) {
+    flex-wrap: wrap;
+  }
   margin-top: 64px;
 }
+
+.menu__soc--item {
+  padding: 0 10px;
+}
+.menu__soc--item:first-child {
+  padding-left: 0;
+}
+.menu__soc--item:last-child {
+  padding-right: 0;
+}
+.menu__soc--item:not(:last-child) {
+  content: '';
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .menu__soc--link {
   font-weight: 500;
   font-size: 18px;
@@ -54,14 +72,14 @@
   color: var(--accent-color);
 }
 
-.menu__button {
+.menu__btn {
   background: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.menu__button {
+.menu__btn {
   position: absolute;
   top: 10px;
   right: 15px;

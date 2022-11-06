@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="./css/normalize-style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-body>
     <!-- Панель навігації -->
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo logo__header" lang="en"
           ><span class="logo--color">Web</span>Studio</a
         >
-        <button type="button" class="menu__button">
+        <button type="button" class="menu__btn menu-open__btn">
           <svg width="24" height="19">
             <use class="icon__menu--open" href="./icon/symbol-defs.svg#menu"></use>
           </svg>
@@ -54,10 +54,13 @@
           </a>
         </div>
       </div>
-      <div class="menu menu-container">
-        <button type="button" class="menu__button">
+      <div class="menu menu-container data-menu is-hidden">
+        <button type="button" class="menu__btn">
           <svg width="24" height="19">
-            <use class="icon__menu--close" href="./icon/symbol-defs.svg#close"></use>
+            <use
+              class="icon__menu--close menu-close__btn"
+              href="./icon/symbol-defs.svg#close"
+            ></use>
           </svg>
         </button>
         <div class="menu-top">
@@ -689,5 +692,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
