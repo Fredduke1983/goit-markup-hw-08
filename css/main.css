@@ -284,11 +284,14 @@ section {
 }
 
 .icon__menu--open {
-  display: block;
+  -webkit-transition: fill var(--bezier-effect);
+  transition: fill var(--bezier-effect);
+}
+.icon__menu--open:hover {
+  fill: var(--accent-color);
 }
 
 .icon__menu--close {
-  display: block;
   -webkit-transition: fill var(--bezier-effect);
   transition: fill var(--bezier-effect);
 }

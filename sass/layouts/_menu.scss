@@ -94,10 +94,13 @@
 }
 
 .icon__menu--open {
-  display: block;
+  &:hover {
+    fill: var(--accent-color);
+  }
+  transition: fill var(--bezier-effect);
 }
+
 .icon__menu--close {
-  display: block;
   &:hover {
     fill: var(--accent-color);
   }
