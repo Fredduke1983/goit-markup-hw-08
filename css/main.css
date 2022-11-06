@@ -161,7 +161,7 @@ section {
 .menu {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,6 +183,14 @@ section {
 }
 
 .menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -192,6 +200,7 @@ section {
 
 .menu__tel {
   display: block;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -214,6 +223,7 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
+  margin-top: 64px;
 }
 
 .menu__soc--link {
@@ -240,7 +250,7 @@ section {
 }
 
 .icon__menu--open {
-  display: none;
+  display: block;
 }
 
 .icon__menu--close {

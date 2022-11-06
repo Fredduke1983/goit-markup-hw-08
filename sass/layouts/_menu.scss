@@ -1,6 +1,6 @@
 .menu {
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,6 +14,9 @@
 }
 
 .menu-top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -23,6 +26,7 @@
 }
 .menu__tel {
   display: block;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -40,6 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 64px;
 }
 .menu__soc--link {
   font-weight: 500;
@@ -63,7 +68,7 @@
 }
 
 .icon__menu--open {
-  display: none;
+  display: block;
 }
 .icon__menu--close {
   display: block;
