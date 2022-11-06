@@ -26,6 +26,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  @include max-mobile {
+    text-align: center;
+  }
 }
 
 .advantage__text {
