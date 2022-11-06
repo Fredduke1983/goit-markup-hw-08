@@ -10,6 +10,8 @@
     width: 100vw;
     height: 100vh;
     background: #ffffff;
+    opacity: 1;
+    transition: opacity var(--bezier-effect), visibility var(--bezier-effect);
   }
 }
 
@@ -21,9 +23,15 @@
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-
-  color: var(--main-text-color);
 }
+.menu-top__link {
+  color: var(--main-text-color);
+  transition: color var(--bezier-effect);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
 .menu__tel {
   display: block;
   margin-bottom: 32px;
@@ -90,4 +98,8 @@
 }
 .icon__menu--close {
   display: block;
+  &:hover {
+    fill: var(--accent-color);
+  }
+  transition: fill var(--bezier-effect);
 }
