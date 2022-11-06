@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  overflow: hidden;
 }
 
 section {
@@ -26,5 +27,11 @@ section {
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    padding: 48px 84px 48px 40px;
   }
 }

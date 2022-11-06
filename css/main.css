@@ -117,6 +117,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  overflow: hidden;
 }
 
 section {
@@ -149,6 +150,101 @@ section {
   .container {
     width: 1200px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    padding: 48px 84px 48px 40px;
+  }
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  }
+}
+
+.menu-top {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.menu__tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.menu__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu__soc--link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu__button {
+  background: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
+.menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.icon__menu--open {
+  display: none;
+}
+
+.icon__menu--close {
+  display: block;
 }
 
 .navigation,
@@ -190,19 +286,6 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.menu__button {
-  background: transparent;
-}
-@media screen and (min-width: 768px) {
-  .menu__button {
-    display: none;
-  }
-}
-
-.icon__menu--close {
-  display: none;
 }
 
 .navigation__list {

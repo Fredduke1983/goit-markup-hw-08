@@ -4,6 +4,7 @@
 @import './base/reset';
 @import './utils/hidden';
 @import './base/base';
+@import './layouts/menu';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/advantages';
@@ -11,6 +12,5 @@
 @import './layouts/team';
 @import './layouts/clients';
 @import './layouts/footer';
-
-// @import './layouts/portfolio';
 @import './components/modal';
+// @import './layouts/portfolio';
