@@ -961,6 +961,7 @@ section {
 }
 @media screen and (max-width: 1199px) {
   .mailer__label {
+    width: 100%;
     margin-bottom: 20px;
   }
 }

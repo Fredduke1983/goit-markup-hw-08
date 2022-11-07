@@ -1,18 +1,18 @@
 .footer {
-  // display: flex;
   background-color: var(--hero-footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer .container {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: baseline;
   }
 }
 
 .footer-wrap {
-  @media screen and(min-width:768px) {
+  @include tablet {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
@@ -32,7 +32,7 @@
   &:focus {
     color: var(--accent-color);
   }
-  @media screen and (max-width: 1199px) {
+  @include max-tablet {
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -48,7 +48,7 @@
     font-size: 14px;
   }
   &__list {
-    @media screen and (max-width: 1199px) {
+    @include max-tablet {
       display: grid;
       justify-content: center;
       justify-items: center;
@@ -68,13 +68,13 @@
 }
 
 .footer__soc-pos {
-  @media screen and (max-width: 1199px) {
+  @include max-tablet {
     display: grid;
     justify-content: center;
     justify-items: center;
     gap: 8px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: 70px;
   }
 }
@@ -86,7 +86,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-  @media screen and (max-width: 1199px) {
+  @include max-tablet {
     margin-top: 60px;
   }
 }
@@ -106,7 +106,7 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  @media screen and(min-width:1200px) {
+  @include desktop {
     margin-left: auto;
     justify-items: flex-start;
   }
@@ -120,19 +120,20 @@
     text-transform: uppercase;
     color: var(--slave-text-color);
     margin-bottom: 20px;
-    @media screen and(max-width:1199px) {
+    @include max-tablet {
       margin-top: 60px;
     }
   }
 
   &__label {
-    @media screen and(max-width: 1199px) {
+    @include max-tablet {
+      width: 100%;
       margin-bottom: 20px;
     }
-    @media screen and(min-width:480px) {
+    @include mobile {
       width: 450px;
     }
-    @media screen and(min-width:1200px) {
+    @include desktop {
       width: 358px;
     }
   }
@@ -176,7 +177,7 @@
     background: var(--hover-btn-color);
   }
 
-  @media screen and(min-width:1200px) {
+  @include desktop {
     margin-left: 12px;
   }
 }
@@ -185,7 +186,7 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  @media screen and(min-width:1200px) {
+  @include desktop {
     display: flex;
   }
 }
