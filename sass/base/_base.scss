@@ -13,7 +13,7 @@ body {
 section {
   padding-bottom: 60px;
   padding-top: 60px;
-  @media screen and(min-width:1200px) {
+  @include desktop {
     padding-bottom: 94px;
     padding-top: 94px;
   }
@@ -22,19 +22,19 @@ section {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1200px;
   }
 }
 
 .menu-container {
-  @media screen and (max-width: 767px) {
-    padding: 48px 84px 48px 40px;
+  @include max-mobile {
+    padding: 48px 40px;
   }
 }

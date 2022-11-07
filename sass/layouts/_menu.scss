@@ -1,6 +1,6 @@
 .menu {
   display: none;
-  @media screen and (max-width: 767px) {
+  @include max-mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,7 +52,7 @@
 
 .menu__soc {
   display: flex;
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 400px) {
     flex-wrap: wrap;
   }
   margin-top: 64px;
@@ -82,7 +82,7 @@
 
 .menu__btn {
   background: transparent;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
