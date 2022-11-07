@@ -285,8 +285,10 @@ section {
 
 .menu__btn {
   position: absolute;
+  width: 40px;
+  height: 40px;
   top: 10px;
-  right: 15px;
+  right: 10px;
 }
 
 .icon__menu--open {
@@ -344,6 +346,11 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header__container {
+    position: relative;
+  }
 }
 
 .navigation__list {
@@ -1336,114 +1343,4 @@ section {
 .form-btn-send:hover,
 .form-btn-send:focus {
   background: var(--hover-btn-color);
-}
-
-.filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-}
-
-.filter-button {
-  font-family: inherit;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  padding: 6px 22px;
-  -webkit-transition: color var(--bezier-effect), background-color var(--bezier-effect), -webkit-box-shadow var(--bezier-effect);
-  transition: color var(--bezier-effect), background-color var(--bezier-effect), -webkit-box-shadow var(--bezier-effect);
-  transition: color var(--bezier-effect), background-color var(--bezier-effect), box-shadow var(--bezier-effect);
-  transition: color var(--bezier-effect), background-color var(--bezier-effect), box-shadow var(--bezier-effect), -webkit-box-shadow var(--bezier-effect);
-}
-.filter-button.all {
-  padding: 6px 25px;
-}
-.filter-button:hover, .filter-button:focus {
-  background-color: var(--accent-color);
-  color: var(--slave-text-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.works {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-.works__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-.works__description {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--second-text-color);
-}
-.works__technology {
-  padding: 20px 24px;
-}
-
-.portfolio__card {
-  max-width: calc((100% - 60px) / 3);
-}
-.portfolio__img {
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.portfolio__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(101%);
-          transform: translateY(101%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.55;
-  color: #ffffff;
-}
-
-.portfolio__link {
-  display: block;
-  border: 1px solid #eeeeee;
-  color: var(--main-text-color);
-  -webkit-transition: -webkit-box-shadow var(--bezier-effect);
-  transition: -webkit-box-shadow var(--bezier-effect);
-  transition: box-shadow var(--bezier-effect);
-  transition: box-shadow var(--bezier-effect), -webkit-box-shadow var(--bezier-effect);
-}
-.portfolio__link:hover, .portfolio__link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio__link:hover .portfolio__text, .portfolio__link:focus .portfolio__text {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }/*# sourceMappingURL=main.css.map */
