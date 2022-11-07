@@ -18,7 +18,14 @@
     <!-- Панель навігації -->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo" lang="en"><span class="logo--color">Web</span>Studio</a>
+        <a href="./index.html" class="logo logo__header" lang="en"
+          ><span class="logo--color">Web</span>Studio</a
+        >
+        <button type="button" class="menu__btn menu-open__btn">
+          <svg class="icon__menu--open" width="40" height="40">
+            <use href="./icon/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
         <nav class="navigation navigation--pos">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -45,6 +52,28 @@
             </svg>
             +38 096 111 11 11
           </a>
+        </div>
+      </div>
+      <div class="menu menu-container data-menu is-hidden">
+        <button type="button" class="menu__btn menu-close__btn">
+          <svg class="icon__menu--close" width="40" height="40">
+            <use href="./icon/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <div class="menu-top">
+          <a class="menu-top__link" href="./index.html">Студія</a>
+          <a class="menu-top__link" href="./portfolio.html">Портфоліо</a>
+          <a class="menu-top__link" href="#">Контакти</a>
+        </div>
+        <div class="menu-bottom">
+          <a class="menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="menu__soc">
+            <li class="menu__soc--item"><a class="menu__soc--link" href="">Instagram</a></li>
+            <li class="menu__soc--item"><a class="menu__soc--link" href="">Twitter</a></li>
+            <li class="menu__soc--item"><a class="menu__soc--link" href="">Facebook</a></li>
+            <li class="menu__soc--item"><a class="menu__soc--link" href="">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -322,5 +351,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
