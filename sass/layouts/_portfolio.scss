@@ -100,6 +100,8 @@
 
 .portfolio__link {
   display: block;
+  width: 100%;
+  height: 100%;
   border: 1px solid #eeeeee;
   color: var(--main-text-color);
   transition: box-shadow var(--bezier-effect);
