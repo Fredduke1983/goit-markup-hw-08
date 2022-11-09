@@ -468,7 +468,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  max-width: 1600px;
   height: 400px;
   margin: 0 auto;
   padding: 118px 0;
@@ -578,12 +578,12 @@ section {
 }
 @media screen and (min-width: 768px) {
   .advantage__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .advantage__item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -621,6 +621,7 @@ section {
   background-color: #f5f4fa;
 }
 .advantage-icon__wrap--pos {
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 .advantage-icon__field {
@@ -913,12 +914,8 @@ section {
 
 @media screen and (max-width: 1199px) {
   .footer__soc-pos {
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    gap: 8px;
+    text-align: center;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -935,11 +932,6 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1199px) {
-  .footer__soc-title {
-    margin-top: 60px;
-  }
-}
 
 .footer__soclink--color {
   color: #fff;
@@ -952,11 +944,7 @@ section {
 }
 
 .mailer {
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .mailer {
@@ -965,34 +953,28 @@ section {
   }
 }
 .mailer__title {
-  display: inline-block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--slave-text-color);
-  margin-bottom: 20px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mailer__title {
-    margin-top: 60px;
+    text-align: start;
   }
 }
-@media screen and (max-width: 1199px) {
-  .mailer__label {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .mailer__label {
-    width: 450px;
-  }
+.mailer__label {
+  display: block;
+  max-width: 450px;
+  margin: 0 auto 20px auto;
 }
 @media screen and (min-width: 1200px) {
   .mailer__label {
     width: 358px;
+    margin: 0;
   }
 }
 .mailer__input {
@@ -1008,6 +990,7 @@ section {
 }
 
 .mailer__btn {
+  margin: 0 auto;
   height: 50px;
   width: 200px;
   background: var(--accent-color);
@@ -1042,7 +1025,7 @@ section {
 }
 
 .fmform {
-  display: grid;
+  margin-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

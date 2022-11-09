@@ -69,10 +69,8 @@
 
 .footer__soc-pos {
   @include max-tablet {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    gap: 8px;
+    text-align: center;
+    margin-top: 60px;
   }
   @include desktop {
     margin-left: 70px;
@@ -86,9 +84,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-  @include max-tablet {
-    margin-top: 60px;
-  }
 }
 
 .footer__soclink--color {
@@ -103,38 +98,37 @@
 }
 
 .mailer {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
+  // display: grid;
+  // justify-content: center;
+  // justify-items: center;
+  margin-top: 60px;
   @include desktop {
     margin-left: auto;
     justify-items: flex-start;
   }
 
   &__title {
-    display: inline-block;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--slave-text-color);
-    margin-bottom: 20px;
-    @include max-tablet {
-      margin-top: 60px;
+    // margin-bottom: 20px;
+    @include desktop {
+      text-align: start;
     }
   }
 
   &__label {
-    @include max-tablet {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    @include mobile {
-      width: 450px;
-    }
+    display: block;
+    max-width: 450px;
+    margin: 0 auto 20px auto;
+
     @include desktop {
       width: 358px;
+      margin: 0;
     }
   }
 
@@ -152,6 +146,7 @@
 }
 
 .mailer__btn {
+  margin: 0 auto;
   height: 50px;
   width: 200px;
 
@@ -183,7 +178,7 @@
 }
 
 .fmform {
-  display: grid;
+  margin-top: 20px;
   justify-content: center;
   justify-items: center;
   @include desktop {
