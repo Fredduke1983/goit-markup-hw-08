@@ -4,12 +4,17 @@
 
   @include max-mobile {
     flex-wrap: wrap;
-    max-width: 430px;
     margin-bottom: 40px;
+    row-gap: 15px;
   }
+
   @include tablet {
     margin-bottom: 30px;
     justify-content: center;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 

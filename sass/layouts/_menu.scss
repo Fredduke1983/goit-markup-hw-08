@@ -59,17 +59,9 @@
   margin-top: 64px;
 }
 
-.menu__soc--item {
-  padding: 0 10px;
-}
-.menu__soc--item:first-child {
-  padding-left: 0;
-}
-.menu__soc--item:last-child {
-  padding-right: 0;
-}
 .menu__soc--item:not(:last-child) {
-  content: '';
+  padding-right: 10px;
+  margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
